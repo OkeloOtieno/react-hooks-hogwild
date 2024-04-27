@@ -1,32 +1,25 @@
-/* Nav.css */
-
 .navWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f8f9fa; /* Light background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-   }
-   
-   .headerText {
+    background-color: #f8f9fa; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.headerText {
     font-size: 24px;
     font-weight: bold;
-    color: #333; /* Dark text for contrast */
-   }
-   
-   .TwirlyPig {
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-   }
-   
-   .App-logo {
+    color: #333;
+}
+.TwirlyPig {
+    width: 50px;
+    height: 50px; 
+}
+.App-logo {
     width: 100%;
     height: auto;
-   }
-   
-   .normalText {
+}
+.normalText {
     font-size: 16px;
-    color: #6c757d; /* Light grey text for a subtle effect */
-   }
-   
+    color: #6c757d; 
+}
