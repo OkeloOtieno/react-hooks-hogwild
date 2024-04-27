@@ -1,5 +1,6 @@
 import React from "react";
-import piggy from "../assets/porco.png";
+import piggy from './porco.png'
+import './Nav.css'
 
 const Nav = () => {
 	return (

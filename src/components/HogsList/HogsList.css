@@ -1,0 +1,19 @@
+.ui.grid.container {
+    padding: 20px;
+}
+.ui.four.wide.column {
+    margin-bottom: 20px; 
+}
+.ui.four.wide.column h3 {
+    font-size: 1.2em;
+    text-align: center; 
+    color: #333; 
+}
+.ui.four.wide.column img {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px; 
+    object-fit: cover; 
+    width: 250px;
+    height: 200px; 
+}
