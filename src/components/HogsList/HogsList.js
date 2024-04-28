@@ -5,8 +5,11 @@ import Modal from "../Modal/Modal";
 function HogsList({ hogs }) {
  const [showModal, setShowModal] = useState(false);
  const [selectedHog, setSelectedHog] = useState(null);
+ const [showGreased, setShowGreased] = useState(false);
 
- const hogsList = hogs.map((hog) => {
+ const filteredHogs = showGreased ? hogs.filter(hog => hog.greased) : hogs;
+
+ const hogsList = filteredHogs.map((hog) => {
     return (
       <div key={hog.name} className="ui four wide column" onClick={() => {
         setSelectedHog(hog);
@@ -25,9 +28,21 @@ function HogsList({ hogs }) {
 
  return (
     <div className="ui grid container">
+      
       {hogsList}
       {showModal && <Modal handleClose={handleClose} show={showModal} hog={selectedHog} />}
+      <div className="filterWrapper">
+        <label>
+          <input
+            type="checkbox"
+            checked={showGreased}
+            onChange={() => setShowGreased(!showGreased)}
+          />
+          Show only greased hogs
+        </label>
+      </div>
     </div>
+    
  );
 }
 
